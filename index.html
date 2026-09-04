@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Botánica del Autor | Menú</title>
+    <style>
+        :root {
+            --color-fondo: #1a1a1a;
+            --color-texto: #e0d8c3;
+            --color-acento: #8b7355;
+            --color-blanco: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            line-height: 1.6;
+        }
+
+        .hero {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* Fondo actualizado con un plato de alta cocina (gastronomía de autor) */
+            background: linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.95)), url('https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') center/cover;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-blanco);
+        }
+
+        .eslogan {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--color-acento);
+            max-width: 500px;
+            letter-spacing: 1px;
+        }
+
+        .menu-section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .categoria-titulo {
+            text-align: center;
+            font-size: 1.8rem;
+            color: var(--color-acento);
+            margin-top: 50px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .platillo-container {
+            margin-bottom: 25px;
+        }
+
+        .platillo {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 15px;
+        }
+
+        .nombre-platillo {
+            font-weight: bold;
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            color: var(--color-blanco);
+        }
+
+        .precio {
+            font-weight: bold;
+            color: var(--color-acento);
+            font-size: 1.05rem;
+            white-space: nowrap;
+        }
+
+        .descripcion {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #111;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .eslogan {
+                font-size: 1rem;
+            }
+            .menu-section {
+                padding: 20px 15px;
+            }
+            .platillo {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+            }
+            .precio {
+                align-self: flex-end;
+                margin-top: -20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>La Botánica del Autor</h1>
+        <p class="eslogan">Donde la naturaleza se vuelve arte en el plato.</p>
+    </header>
+
+    <section id="menu" class="menu-section">
+        
+        <h2 class="categoria-titulo">Entradas</h2>
+        
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Remolacha en tres texturas</span><span class="precio">Q 72</span></div>
+            <p class="descripcion">Remolacha asada, esfera líquida de remolacha y polvo de tierra comestible, queso de cabra ahumado en casa.</p>
+        </div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Vieira sellada sobre ceniza de puerro</span><span class="precio">Q 95</span></div>
+            <p class="descripcion">Vieira dorada a la perfección, crema de coliflor tostada, aceite de perejil y aire de limón.</p>
+        </div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Tartar de res añejada con yema curada</span><span class="precio">Q 88</span></div>
+            <p class="descripcion">Res añejada 21 días, yema curada en sal, alcaparras fritas y pan de fermentación lenta.</p>
+        </div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Foie gras con compota de higo y cacao</span><span class="precio">Q 110</span></div>
+            <p class="descripcion">Foie gras sellado, compota de higo especiada, tierra de cacao y brioche tostado.</p>
+        </div>
+
+        <h2 class="categoria-titulo">Plato Fuerte</h2>
+        
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Cordero a baja temperatura, 48 horas</span><span class="precio">Q 195</span></div>
+            <p class="descripcion">Pierna de cordero cocida al vacío, puré de apio nabo ahumado, jus reducido de romero y vino tinto.</p>
+        </div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Róbalo en costra de hierbas del jardín</span><span class="precio">Q 168</span></div>
+            <p class="descripcion">Róbalo fresco, velouté de mariscos, espárragos verdes y polvo de aceituna negra deshidratada.</p>
+        </div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Pato confitado con puré de membrillo</span><span class="precio">Q 175</span></div>
+            <p class="descripcion">Pierna de pato confitada 6 horas, piel crocante, puré de membrillo especiado y reducción de oporto.</p>
+        </div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Risotto negro de calamar y erizo de mar</span><span class="precio">Q 152</span></div>
+            <p class="descripcion">Arroz teñido con tinta de calamar, calamar salteado, erizo de mar fresco y aceite de ajo negro.</p>
+        </div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Costilla corta braseada en vino tinto y cacao</span><span class="precio">Q 182</span></div>
+            <p class="descripcion">Costilla de res cocida a fuego lento 14 horas, puré de papa trufado y vegetales de raíz glaseados.</p>
+        </div>
+
+        <h2 class="categoria-titulo">Postres</h2>
+        
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Esfera de chocolate al 70% con sorpresa interior</span><span class="precio">Q 58</span></div>
+            <p class="descripcion">Esfera de chocolate que se derrite en mesa, revelando helado de vainilla de Tahití y frutos rojos.</p>
+        </div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Deconstrucción de limón</span><span class="precio">Q 50</span></div>
+            <p class="descripcion">Gel de limón, merengue tostado, sorbete cítrico y polvo de galleta de mantequilla.</p>
+        </div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Textura de café y avellana</span><span class="precio">Q 52</span></div>
+            <p class="descripcion">Cremoso de café, praliné de avellana, tierra de cacao y espuma de leche tibia.</p>
+        </div>
+
+        <h2 class="categoria-titulo">Bebidas</h2>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Ceniza y Humo</span><span class="precio">Q 72</span></div>
+            <p class="descripcion">Mezcal, licor de café, bitters de cacao ahumado con romero al momento de servir.</p>
+        </div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Jardín Botánico</span><span class="precio">Q 65</span></div>
+            <p class="descripcion">Gin infusionado con hierbas de temporada, tónica artesanal y flores comestibles.</p>
+        </div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Barrel Aged Old Fashioned</span><span class="precio">Q 78</span></div>
+            <p class="descripcion">Whisky añejado en barrica por 30 días, bitters de naranja y azúcar de caña quemada.</p>
+        </div>
+        
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Pinot Noir, Chile</span><span class="precio">Q 55</span></div>
+        	<p class="descripcion">6 oz.</p>
+	</div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Chardonnay Barrica, Argentina</span><span class="precio">Q 52</span></div>
+        	<p class="descripcion">6 oz.</p>
+	</div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Champagne Brut Nature, Francia</span><span class="precio">Q 95</span></div>
+        	<p class="descripcion">6 oz.</p>
+	</div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Infusión fría de hierbas de autor</span><span class="precio">Q 30</span></div>
+            <p class="descripcion">Mezcla de hierbas de la casa, cítricos frescos y un toque de miel de flor.</p>
+        </div>
+
+        <div class="platillo-container">
+            <div class="platillo"><span class="nombre-platillo">Kombucha artesanal de jengibre</span><span class="precio">Q 32</span></div>
+            <p class="descripcion">Fermentación propia con jengibre fresco y un toque de cardamomo.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p><strong>La Botánica del Autor</strong></p>
+        <p>Experiencia Gastronómica de Vanguardia</p>
+    </footer>
+
+</body>
+</html>
